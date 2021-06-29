@@ -1,9 +1,9 @@
 <template>
   <div class="app-main-layout">
 
-    <Navbar @click="isOpen = !isOpen"></Navbar>
+    <Navbar @click="isOpen = !isOpen" />
 
-    <SideBar v-model="isOpen"></SideBar>
+    <SideBar v-model="isOpen" />
 
     <main class="app-content" :class="{full: !isOpen}">
       <div class="app-page">
@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import Navbar from '../components/app/Navbar.vue'
-import Sidebar from '../components/app/Sidebar.vue'
+import Navbar from '@/components/app/Navbar'
+import Sidebar from '@/components/app/Sidebar'
 export default {
   name: 'main-layout',
   data: () => ({
